@@ -8,7 +8,7 @@ function Catalogo() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  
+
   return (
     <section className='py-12'>
       <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
@@ -90,7 +90,7 @@ function Catalogo() {
           </div>
           <div className='bg-gray-100 rounded-lg overflow-hidden'>
             <h3 className='text-lg font-bold px-4 py-2 bg-gray-200'>
-              Microblanding
+              Depilacion
             </h3>
             <div className='grid grid-cols-2 md:grid-cols-3 gap-4 p-4'>
               <img

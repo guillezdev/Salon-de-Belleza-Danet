@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 export const Header = () => {
   return (
     <><div className="h-16"></div>
-      <header className='fixed z-50 top-0 right-0 left-0 bg-white backdrop-filter bg-opacity-10 shadow-sm backdrop-blur-sm'>
+      <header className='fixed z-50 top-0 right-0 left-0 bg-white shadow-md shadow-pink-500'>
         <nav className='container mx-auto px-4 py-5 flex justify-between items-center '>
-          <Link to='/' className='font-bold text-lg text-gray-800'>
+          <Link to='/' className='font-bold text-xl uppercase text-gray-800'>
             Danet
           </Link>
           <ul className='flex space-x-4'>

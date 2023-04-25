@@ -1,5 +1,5 @@
 import { Services } from "./Services";
-import { FaPhoneAlt } from "react-icons/fa";
+import { FaPhoneAlt, FaWhatsapp } from "react-icons/fa";
 function Home() {
   return (
     <div className='bg-gray-100 min-h-screen'>
@@ -10,9 +10,9 @@ function Home() {
             Tu belleza es nuestra prioridad
           </h2>
           <p className='text-gray-100 text-lg mb-8'>
-            En nuestro salón de belleza ofrecemos una amplia variedad de
-            servicios para que te veas y te sientas radiante. ¡Agenda tu cita
-            hoy mismo!
+            Resalta tu belleza natural con nuestros exclusivos servicios de alta
+            calidad. ¡Agenda hoy y disfruta de una experiencia única y
+            personalizada!
           </p>
           <a href='tel:+5355389929'>
             <button className='btn'>Agenda tu cita</button>
@@ -63,7 +63,7 @@ function Home() {
               <div className='flex'>
                 <div className='flex-shrink-0'>
                   <div className='flex items-center justify-center h-12 w-12 rounded-md bg-pink-600 text-white'>
-                    <FaPhoneAlt />
+                    <FaPhoneAlt size={30}/>
                   </div>
                 </div>
                 <div className='ml-4'>
@@ -75,6 +75,21 @@ function Home() {
                   </dd>
                 </div>
               </div>
+              <a href='https://wa.me/+5355389929' className='flex'>
+                <div className='flex-shrink-0'>
+                  <div className='flex items-center justify-center h-12 w-12 rounded-md bg-pink-600 text-white'>
+                    <FaWhatsapp size={30}/>
+                  </div>
+                </div>
+                <div  className='ml-4'>
+                  <dt className='text-lg leading-6 font-medium text-gray-900'>
+                    Teléfono
+                  </dt>
+                  <dd className='mt-2 text-base text-gray-500'>
+                   +5355389929
+                  </dd>
+                </div>
+              </a>
             </dl>
           </div>
         </div>

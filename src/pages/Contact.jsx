@@ -71,7 +71,7 @@ export const Contact = () => {
               </div>
               <button
                 type='submit'
-                className='bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition-colors duration-300'
+                className='bg-pink-500 text-white px-4 py-2 rounded-md hover:bg-gray-900 transition-colors duration-300'
               >
                 Enviar
               </button>
