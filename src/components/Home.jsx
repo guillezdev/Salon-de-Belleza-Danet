@@ -83,7 +83,7 @@ function Home() {
                 </div>
                 <div  className='ml-4'>
                   <dt className='text-lg leading-6 font-medium text-gray-900'>
-                    Teléfono
+                    Whatsapp
                   </dt>
                   <dd className='mt-2 text-base text-gray-500'>
                    +5355389929

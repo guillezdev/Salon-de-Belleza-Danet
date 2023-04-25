@@ -55,7 +55,7 @@ function Catalogo() {
             <h3 className='text-lg font-bold px-4 py-2 bg-gray-200'>
               Pedicura
             </h3>
-            <div className='grid grid-cols-2 md:grid-cols-3 gap-4 p-4'>
+            <div className='grid grid-cols-2 md:grid-cols-3 gap-1 p-4'>
               <img
                 src={Pedicura}
                 alt='Manicura'
@@ -92,7 +92,7 @@ function Catalogo() {
             <h3 className='text-lg font-bold px-4 py-2 bg-gray-200'>
               Depilacion
             </h3>
-            <div className='grid grid-cols-2 md:grid-cols-3 gap-4 p-4'>
+            <div className='grid grid-cols-2 md:grid-cols-3 gap-1 p-4'>
               <img
                 src={Depilacion}
                 alt='Manicura'
