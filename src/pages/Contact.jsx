@@ -1,9 +1,12 @@
-import React, { useState } from "react";
+import React, { useState , useEffect } from "react";
 
 export const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -13,11 +16,16 @@ export const Contact = () => {
     setEmail("");
     setMessage("");
   };
-
+  
+  
   return (
-    <section className='bg-gray-100 py-16'>
+    <section className='h-screen py-16'>
       <div className='container mx-auto px-4'>
-        <h1 className='text-5xl font-bold text-gray-900 mb-8'>Contáctanos</h1>
+      <div className='flex flex-col mb-8'>
+      <h2 className='text-3xl font-bold text-gray-900 '>Contáctanos</h2>
+          <div className='w-44 h-1 rounded-lg bg-pink-500 shadow-md shadow-pink-500'></div>
+        </div>
+        
         <div className='grid grid-cols-1 md:grid-cols-2 md:flex-row-reverse gap-8'>
           <div>
             <p className='text-lg text-gray-600 mb-4'>

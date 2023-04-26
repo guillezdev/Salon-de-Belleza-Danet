@@ -6,8 +6,11 @@ import { Link } from "react-router-dom";
 
 export const Services = () => {
   return (
-    <section className='bg-white py-16'>
-      <h2 className="text-4xl mb-2 text-center">Nuestros Servicios</h2>
+    <section className='bg-white py-16 max-w-7xl mx-auto'>
+      <div className="flex flex-col px-10">
+        <h2 className='text-5xl self-center font-bold mb-2'>Servicios</h2>
+        <div className='w-44 h-1 self-center rounded-lg bg-pink-500 shadow-md shadow-pink-500'></div>
+      </div>
       <div className='flex flex-wrap justify-center'>
         {/* Manicura */}
         <div className='max-w-sm rounded overflow-hidden shadow-lg m-4'>

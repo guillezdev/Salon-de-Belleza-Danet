@@ -12,7 +12,11 @@ function Catalogo() {
   return (
     <section className='py-12'>
       <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
-        <h2 className='text-3xl font-bold mb-6'>Galería</h2>
+        <div className='flex flex-col mb-6'>
+          <h2 className='text-3xl font-bold'>Galería</h2>
+          <div className='w-24 h-1 rounded-lg bg-pink-500 shadow-md shadow-pink-500'></div>
+        </div>
+
         <div className='grid '>
           <div id='manicura' className='bg-gray-100 rounded-lg overflow-hidden'>
             <h3 className='text-lg font-bold px-4 py-2 bg-gray-200'>
