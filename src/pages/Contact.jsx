@@ -19,7 +19,7 @@ export const Contact = () => {
   
   
   return (
-    <section className='h-screen py-16'>
+    <section className=' py-16'>
       <div className='container mx-auto px-4'>
       <div className='flex flex-col mb-8'>
       <h2 className='text-3xl font-bold text-gray-900 '>Contáctanos</h2>
