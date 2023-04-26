@@ -1,7 +1,7 @@
 import { Services } from "./Services";
 import { Price } from "./Price";
-import { FaPhoneAlt, FaWhatsapp , FaClock} from "react-icons/fa";
-import { SlLocationPin} from "react-icons/sl";
+import { FaPhoneAlt, FaWhatsapp, FaClock } from "react-icons/fa";
+import { SlLocationPin } from "react-icons/sl";
 import { useEffect } from "react";
 function Home() {
   useEffect(() => {
@@ -21,7 +21,12 @@ function Home() {
             personalizada!
           </p>
           <a href='tel:+5355389929'>
-            <button className='btn'>Agenda tu cita</button>
+            <button className='flex justify-center items-center btn'>
+              <span className='relative pr-3 '>
+                <FaPhoneAlt size={20} />
+              </span>
+              Agenda tu cita
+            </button>
           </a>
         </div>
       </div>
@@ -47,7 +52,7 @@ function Home() {
               <div className='flex'>
                 <div className='flex-shrink-0'>
                   <div className='flex items-center justify-center h-12 w-12 rounded-md bg-pink-500 text-white'>
-                <SlLocationPin className="text-white" size={30} />
+                    <SlLocationPin className='text-white' size={30} />
                   </div>
                 </div>
                 <div className='ml-4'>
@@ -69,9 +74,7 @@ function Home() {
                   <dt className='text-lg leading-6 font-medium text-gray-900'>
                     Teléfono
                   </dt>
-                  <dd className='mt-2 text-base text-gray-500'>
-                    +5355389929
-                  </dd>
+                  <dd className='mt-2 text-base text-gray-500'>+5355389929</dd>
                 </div>
               </a>
               <a href='https://wa.me/+5355389929' className='flex'>
@@ -98,7 +101,7 @@ function Home() {
                     Horario
                   </dt>
                   <dd className='mt-2 text-base text-gray-500'>
-                    Martes a Domingo: 10:00am - 8:00pm  
+                    Martes a Domingo: 10:00am - 8:00pm
                   </dd>
                 </div>
               </div>
