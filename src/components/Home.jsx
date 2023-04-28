@@ -60,7 +60,7 @@ function Home() {
                     Dirección
                   </dt>
                   <dd className='mt-2 text-base text-gray-500'>
-                    Calle 165, Reparto Peñas Altas, Matanzas, Cuba
+                  Calle 139 b entre 166 y 168 # 16612  Reparto Reinol García , Pastorita, Matanzas, Cuba
                   </dd>
                 </div>
               </div>
@@ -101,7 +101,7 @@ function Home() {
                     Horario
                   </dt>
                   <dd className='mt-2 text-base text-gray-500'>
-                    Martes a Domingo: 10:00am - 8:00pm
+                    Martes a Domingo: 9:00am - 6:00pm
                   </dd>
                 </div>
               </div>
