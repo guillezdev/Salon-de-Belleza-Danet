@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Transition } from "@headlessui/react";
 import danet from "../assets/Danet.jpg";
 import { NavLink } from "react-router-dom";
@@ -6,6 +6,7 @@ import { NavLink } from "react-router-dom";
 export const Header = () => {
   const [isMobile, setIsMobile] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+  const checkboxRef = useRef(null);
 
   useEffect(() => {
     const handleResize = () => {
@@ -62,10 +63,13 @@ export const Header = () => {
                 </li>
               </ul>
             </div>
-
             <div className='md:hidden'>
               <label className='hamburger'>
-                <input type='checkbox' onClick={() => setIsOpen(!isOpen)} />
+                <input
+                  ref={checkboxRef}
+                  type='checkbox'
+                  onClick={() => setIsOpen(!isOpen)}
+                />
                 <svg viewBox='0 0 32 32'>
                   <path
                     className='line line-top-bottom'
@@ -76,7 +80,6 @@ export const Header = () => {
               </label>
             </div>
           </div>
-
           <Transition
             show={isOpen}
             enter='transition ease-out duration-100 transform'
@@ -92,6 +95,10 @@ export const Header = () => {
                   <li>
                     <NavLink
                       to={"/"}
+                      onClick={() => {
+                        setIsOpen(!isOpen);
+                        checkboxRef.current.checked = false;
+                      }}
                       className='text-gray-800 font-semibold hover:text-pink-500 cursor-pointer select-none'
                     >
                       Inicio
@@ -100,6 +107,10 @@ export const Header = () => {
                   <li>
                     <NavLink
                       to={"/catalogo"}
+                      onClick={() => {
+                        setIsOpen(!isOpen);
+                        checkboxRef.current.checked = false;
+                      }}
                       className='text-gray-800 font-semibold hover:text-pink-500 cursor-pointer select-none'
                     >
                       Galeria
@@ -108,6 +119,10 @@ export const Header = () => {
                   <li>
                     <NavLink
                       to={"/contact"}
+                      onClick={() => {
+                        setIsOpen(!isOpen);
+                        checkboxRef.current.checked = false;
+                      }}
                       className='text-gray-800 font-semibold hover:text-pink-500 cursor-pointer select-none'
                     >
                       Contacto
