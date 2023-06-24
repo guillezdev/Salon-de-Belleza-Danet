@@ -8,9 +8,9 @@ function Home() {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div className=' min-h-screen'>
+    <div id="top" className=' min-h-screen'>
       {/* Banner */}
-      <div className='bg-gradient-to-r from-gray-900 to-pink-500 py-16'>
+      <div className='bg-gradient-to-r from-gray-900 to-pink-500 py-20'>
         <div className='container mx-auto px-4'>
           <h2 className='text-5xl font-bold text-white mb-4'>
             Tu belleza es nuestra prioridad
